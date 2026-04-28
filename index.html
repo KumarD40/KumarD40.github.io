@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilip Kumar — Senior Infrastructure Engineer</title>
+  <meta name="description" content="Senior Infrastructure Engineer specializing in Linux, OpenVMS, SRE, DevOps, and Cloud technologies." />
+
+  <!-- Google Fonts: Syne (display) + JetBrains Mono (mono) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CURSOR FOLLOWER
+  ═══════════════════════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>DK<span class="logo-bracket">]</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#clients" class="nav-link">Clients</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Hire Me
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Terminal-style greeting -->
+        <div class="terminal-badge">
+          <span class="terminal-prompt">root@infra:~$</span>
+          <span class="terminal-text" id="terminalText"></span>
+          <span class="terminal-cursor">▋</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span class="name-first">Dilip</span>
+          <span class="name-last">Kumar</span>
+        </h1>
+
+        <div class="hero-title-wrap">
+          <div class="hero-title-line"></div>
+          <p class="hero-title" id="heroTitle">Senior Linux Administrator</p>
+          <div class="hero-title-line"></div>
+        </div>
+
+        <p class="hero-tagline">
+          10+ years of experience in enterprise infrastructure, automation,<br class="desktop-br" /> and cloud technologies
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Enterprise Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Uptime Target</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ph ph-code"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="ph ph-paper-plane-tilt"></i> Contact Me
+          </a>
+          <a href="#" class="btn btn-outline" id="resumeBtn">
+            <i class="ph ph-download-simple"></i> Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hcard hcard-back"></div>
+          <div class="hcard hcard-mid"></div>
+          <div class="hcard hcard-front">
+            <div class="hcard-avatar">
+              <div class="avatar-initials">DK</div>
+            </div>
+            <div class="hcard-info">
+              <p class="hcard-name">Dilip Kumar</p>
+              <p class="hcard-role">Sr. Infrastructure Engineer</p>
+              <div class="hcard-tags">
+                <span>Linux</span><span>OpenVMS</span><span>Cloud</span>
+              </div>
+            </div>
+            <div class="hcard-status">
+              <span class="status-dot"></span> Open to SRE / DevOps roles
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// about_me</span>
+        <span class="label-line"></span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Building Resilient<br /><em>Infrastructure</em></h2>
+          <p class="about-body">
+            With over a decade of hands-on experience managing enterprise-grade Linux and OpenVMS infrastructure,
+            I've kept mission-critical systems online for some of India's most demanding organisations — including
+            ISRO, IBM, Capgemini, TCS, and NTT Data.
+          </p>
+          <p class="about-body">
+            My work spans everything from bare-metal server administration and DCL scripting to VMware virtualisation,
+            disaster recovery orchestration, and cloud migration. I'm now channelling that depth into SRE, DevOps, and
+            Cloud Engineering — bringing real production intuition to automation, observability, and infrastructure-as-code.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="ph ph-terminal-window"></i>
+              <span>Linux & OpenVMS specialist</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ph ph-cloud"></i>
+              <span>AWS & Azure cloud adoption</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ph ph-robot"></i>
+              <span>Automation with Ansible & Terraform</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ph ph-fire-extinguisher"></i>
+              <span>Disaster Recovery & high availability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-aside reveal">
+          <!-- Terminal-style info card -->
+          <div class="terminal-card">
+            <div class="tc-header">
+              <span class="tc-dot red"></span>
+              <span class="tc-dot yellow"></span>
+              <span class="tc-dot green"></span>
+              <span class="tc-title">profile.json</span>
+            </div>
+            <pre class="tc-body"><code>{
+  <span class="json-key">"name"</span>: <span class="json-str">"Dilip Kumar"</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"Bengaluru, India"</span>,
+  <span class="json-key">"current_role"</span>: <span class="json-str">"Systems Administrator"</span>,
+  <span class="json-key">"company"</span>: <span class="json-str">"NTT Data"</span>,
+  <span class="json-key">"years_exp"</span>: <span class="json-num">10</span>,
+  <span class="json-key">"specialisation"</span>: [
+    <span class="json-str">"Linux (RHEL/CentOS)"</span>,
+    <span class="json-str">"OpenVMS"</span>,
+    <span class="json-str">"VMware"</span>,
+    <span class="json-str">"DR Operations"</span>
+  ],
+  <span class="json-key">"targeting"</span>: [
+    <span class="json-str">"SRE"</span>,
+    <span class="json-str">"DevOps"</span>,
+    <span class="json-str">"Cloud Engineering"</span>
+  ],
+  <span class="json-key">"status"</span>: <span class="json-str">"open_to_opportunities"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+       (rendered by JS — edit data/skills in script.js)
+  ═══════════════════════════════════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// tech_stack</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">Skills & <em>Expertise</em></h2>
+      <p class="section-subtitle">Hover a category to explore the stack</p>
+      <!-- JS renders skill groups here -->
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE SECTION
+       (rendered by JS — edit data/experience in script.js)
+  ═══════════════════════════════════════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// work_history</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">Professional <em>Journey</em></h2>
+      <p class="section-subtitle">10+ years across India's leading enterprises</p>
+
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+       (rendered by JS — edit data/projects in script.js)
+  ═══════════════════════════════════════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// featured_projects</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">Selected <em>Projects</em></h2>
+      <p class="section-subtitle">Infrastructure work that made a real difference</p>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CLIENTS / COMPANIES SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section clients-section" id="clients">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// companies_worked_with</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">Industry <em>Experience</em></h2>
+      <p class="section-subtitle">Organisations I've served across India</p>
+
+      <div class="clients-grid" id="clientsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">// get_in_touch</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">Let's <em>Connect</em></h2>
+      <p class="section-subtitle">Open to SRE, DevOps, and Cloud Engineering opportunities</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <i class="ph ph-envelope-simple"></i>
+            <div>
+              <p class="contact-label">Email</p>
+              <!-- ✏️ EDIT: Replace with your email -->
+              <a href="mailto:dilipkumar@example.com" class="contact-value">dilipkumar@example.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="ph ph-github-logo"></i>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <!-- ✏️ EDIT: Replace with your GitHub URL -->
+              <a href="https://github.com/dilipkumar" target="_blank" class="contact-value">github.com/dilipkumar</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="ph ph-linkedin-logo"></i>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <!-- ✏️ EDIT: Replace with your LinkedIn URL -->
+              <a href="https://linkedin.com/in/dilipkumar" target="_blank" class="contact-value">linkedin.com/in/dilipkumar</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="ph ph-map-pin"></i>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="ph ph-paper-plane-tilt"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo"><span class="logo-bracket">[</span>DK<span class="logo-bracket">]</span></p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Dilip Kumar. Crafted with precision and passion.
+        </p>
+        <div class="footer-links">
+          <!-- ✏️ EDIT: Replace hrefs with your actual social links -->
+          <a href="https://github.com/dilipkumar" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+          <a href="https://linkedin.com/in/dilipkumar" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="mailto:dilipkumar@example.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
